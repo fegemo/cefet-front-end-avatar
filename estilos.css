@@ -1,17 +1,13 @@
-html, body {
-  min-height: 100vh;
-}
-
 body {
   margin: 0;
   font-family: 'Encode Sans', sans-serif;
-  background-image: linear-gradient(to right, lightblue, #ffdbff);
+  background-color: lightsteelblue;
 }
 
 header {
   padding: 0.1em 0.5em;
   position: relative;
-  transition: all 120ms ease-out 0ms;
+  transition: all 150ms ease-out 50ms;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.04);
@@ -20,7 +16,7 @@ header {
 }
 
 header:hover {
-  box-shadow: 4px 0 8px #0004;
+  box-shadow: 4px 4px 4px rgba(0,0,0,.2);
   background-color: rgba(255, 255, 255, 0.20);
   top: -4px;
 }
@@ -32,23 +28,22 @@ header h1 {
 
 main {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  padding: 1em;
 }
 
 main > section {
-  border: 1px dashed rgba(0, 0, 0, 0.16);
-  padding: 1em;
-  background-color: #fff5;
+  border: dashed rgba(0, 0, 0, 0.16);
+  border-width: 0 1px 1px;
+  padding: 0 1em 1em;
+  margin: 0 4px;
 }
 
 main > section:not(:first-child) {
+  margin-left: 1em;
   flex: 1 1 30%;
 }
 
-main > section > h2:first-child {
-  margin-top: 0;
+main > section:not(:last-child) {
+  margin-right: 1em;
 }
 
 #avatar-preview::after {

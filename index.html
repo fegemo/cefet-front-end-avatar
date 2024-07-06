@@ -1,16 +1,14 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Avatar Creator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Boogaloo&family=Encode+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Baloo+Bhaijaan|Encode+Sans">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="marca.css">
     <link rel="stylesheet" href="avatar.css">
     <link rel="stylesheet" href="controles.css">
-    <link rel="shortcut icon" href="imgs/icone-tesoura.png">
   </head>
   <body>
     <header>
@@ -45,6 +43,29 @@
         <h2>Controles</h2>
         <div>
           <!-- coloque os controles aqui -->
+          <label for="nome-avatar">Nome:</label>
+          <input type="text" id="nome-avatar" maxlength="50"><br>
+          <label for="cor-cabelo-avatar">Cor da pele:</label>
+          <input type="color" value='#FFDAC2' id='cor-pele-avatar'><br>
+          <label for="seletor-cabelo">Cabelo:</label>
+          <select id='seletor-cabelo'>
+            <option value='imgs/cabelo-careca.png'>Careca</option>
+            <option value='imgs/cabelo-alaranjado-curto.png'>Alaranjado curto</option>
+            <option value='imgs/cabelo-azul-longo.png'>Azul longo</option>
+            <option value='imgs/cabelo-marrom-curto.png'>Marrom curto</option>
+            <option value='imgs/cabelo-preto-medio.png'>Preto médio</option>
+            <option value='imgs/cabelo-roxo-curto.png'>Roxo curto</option>
+            <option value='imgs/cabelo-verde-medio.png'>Verde médio</option>
+          </select><br>
+          <label for='acessorios'>
+            Acessórios <br>
+            <input type='checkbox' id='COculos'>
+            <label for='COculos'>Óculos</label><br>
+            <input type='checkbox' id='CLacinhos'>
+            <label for='CLacinhos'>Lacinhos</label><br>
+            <input type='checkbox' id='CBandana'>
+            <label for='CBandana'>Bandana</label>
+          </label><br>
         </div>
       </section>
       <section id="secao-instrucoes">
